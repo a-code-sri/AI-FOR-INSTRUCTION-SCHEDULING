@@ -3,3 +3,4 @@ streamlit
 pandas
 matplotlib
 networkx
+tensorflow-cpu==2.13.0
