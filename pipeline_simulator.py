@@ -141,13 +141,13 @@ def simulate_pipeline_table(instructions, truth=None, pred=None, flush_penalty=2
                 # RAW Hazard: Instr(D) needs result from Instr(E)
                 stall = True
                 hazard_info[cycle_num] = (
-                    f"RAW Hazard: Stall. {pipeline["D"]} needs {prev_e_dest} from {pipeline["E"]}."
+                    f"RAW Hazard: Stall. {pipeline['D']} needs {prev_e_dest} from {pipeline['E']}."
                 )
             elif prev_m_dest and prev_m_dest in d_srcs:
                 # RAW Hazard: Instr(D) needs result from Instr(M)
                 stall = True
                 hazard_info[cycle_num] = (
-                    f"RAW Hazard: Stall. {pipeline["D"]} needs {prev_m_dest} from {pipeline["M"]}."
+                    f"RAW Hazard: Stall. {pipeline['D']} needs {prev_m_dest} from {pipeline['M']}."
                 )
 
             # --- WAW & WAR Hazards ---
